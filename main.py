@@ -66,13 +66,6 @@ def run_alexa():
             any_more()
 
             return e
-        elif 'time' in command:
-            time = datetime.datetime.now().strftime('%I:%M %p')
-            print('Current time is ' + time)
-            talk('Current time is ' + time)
-            e = 0
-            any_more()
-            return e
         elif 'joke' in command:
             joke = pyjokes.get_joke()
             print(joke)
